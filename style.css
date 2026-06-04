@@ -155,15 +155,14 @@ box-shadow:0 10px 25px rgba(0,0,0,0.08);
     padding:15px;
     box-shadow:0 25px 60px rgba(0,0,0,0.15);
 
-    max-width:320px;
+    max-width:280px;
     margin:auto;
 }
 
 .phone img{
     width:100%;
     height:auto;
-    display:block;
-    border-radius:25px;
+    object-fit:contain;
 }
 
 /* ===== INFO CARD ===== */
