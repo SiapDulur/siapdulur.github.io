@@ -150,15 +150,20 @@ box-shadow:0 10px 25px rgba(0,0,0,0.08);
 
 /* ===== PHONE MOCKUP ===== */
 .phone{
-background:white;
-border-radius:35px;
-padding:15px;
-box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    background:white;
+    border-radius:35px;
+    padding:15px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+
+    max-width:320px;
+    margin:auto;
 }
 
 .phone img{
-width:100%;
-border-radius:25px;
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:25px;
 }
 
 /* ===== INFO CARD ===== */
@@ -451,4 +456,16 @@ display:inline-block;
 max-width:280px;
 margin:auto;
 }
+@media(max-width:768px){
+
+.phone{
+    max-width:250px;
+    margin:20px auto;
+}
+
+.phone img{
+    width:100%;
+    height:auto;
+}
+
 }
