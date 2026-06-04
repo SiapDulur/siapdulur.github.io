@@ -318,3 +318,29 @@ align-items:center;
 html{
     scroll-behavior:smooth;
 }
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:url('images/perumahan-depan.jpg') center center/cover no-repeat;
+    opacity:0.12;
+    z-index:0;
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,0.85);
+    z-index:0;
+}
+
+.hero > *{
+    position:relative;
+    z-index:1;
+}
