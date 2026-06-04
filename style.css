@@ -315,3 +315,6 @@ display:none;
 align-items:center;
 }
 }
+html{
+    scroll-behavior:smooth;
+}
