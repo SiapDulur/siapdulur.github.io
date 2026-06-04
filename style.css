@@ -261,7 +261,7 @@ font-weight:700;
 .download-section{
 margin:60px 8%;
 text-align:center;
-padding:60px;
+padding:40px 20px;
 background:linear-gradient(135deg,#11c8a0,#0fb3d5);
 color:white;
 border-radius:25px;
@@ -318,11 +318,15 @@ text-align:center;
 }
 
 .hero h1{
-font-size:40px;
+font-size:32px;
+}
+
+.hero-text{
+font-size:18px;
 }
 
 .features{
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:1fr;
 }
 
 .service-grid{
@@ -401,4 +405,50 @@ html{
         box-shadow:0 0 0 0 rgba(255,255,255,0);
     }
 }
+.hero-buttons{
+flex-wrap:wrap;
+justify-content:center;
+}
+.phone{
+max-width:320px;
+margin:auto;
+}
+@media(max-width:768px){
 
+header{
+padding:15px 5%;
+}
+
+.hero{
+padding:30px 5%;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero-text{
+font-size:16px;
+}
+
+.services h2{
+font-size:28px;
+}
+
+.download-section{
+padding:30px 15px;
+}
+
+.apk-btn,
+.btn-download,
+.banner-btn{
+width:100%;
+max-width:280px;
+display:inline-block;
+}
+
+.phone{
+max-width:280px;
+margin:auto;
+}
+}
