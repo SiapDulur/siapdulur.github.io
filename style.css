@@ -77,39 +77,36 @@ font-size:60px;
 line-height:1.1;
 font-weight:800;
 
-opacity:0;
-transform:translateX(-400px);
-animation:slideInLeft 1.2s ease-out forwards;
+animation:slideInLeft 3s infinite;
 
 text-shadow:
-3px 3px 8px rgba(0,0,0,0.15),
-0 0 25px rgba(17,200,160,0.15);
+3px 3px 6px rgba(0,0,0,0.12);
 }
 
 .hero h1 span{
 color:#11c8a0;
-
-text-shadow:
-0 0 10px rgba(17,200,160,0.4),
-0 0 20px rgba(17,200,160,0.3),
-0 0 30px rgba(17,200,160,0.2);
 }
 
 @keyframes slideInLeft{
+
 0%{
 opacity:0;
-transform:translateX(-400px);
+transform:translateX(-300px);
 }
 
-70%{
-opacity:1;
-transform:translateX(20px);
-}
-
-100%{
+15%{
 opacity:1;
 transform:translateX(0);
 }
+
+85%{
+opacity:1;
+transform:translateX(0);
+}
+
+100%{
+opacity:0;
+transform:translateX(-300px);
 }
 
 .hero-text{
